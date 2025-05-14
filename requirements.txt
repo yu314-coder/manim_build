@@ -1,28 +1,16 @@
-# Core dependencies
-streamlit>=1.25.0
-manim>=0.17.3
-numpy>=1.22.0
-Pillow>=9.0.0
-matplotlib 
-plotly
-# UI enhancements
+# Core Streamlit and UI
+streamlit>=1.28.0
 streamlit-ace>=0.1.1
 
-# AI and code generation
-transformers>=4.30.0
-accelerate>=0.20.0
-# Rendering and media processing
-ffmpeg-python>=0.2.0
-moviepy>=1.0.3
+# Manim and dependencies
+manim>=0.17.3
+numpy>=1.22.0
 
-# Utilities
+# Image processing
+Pillow>=9.0.0
+
+# Code highlighting
 pygments>=2.15.1
-websockets>=10.3
-markdown
-# Better performance
-opencv-python>=4.8.0
-schedule
-# Add these to the required_packages in ensure_packages()
-azure-ai-inference == 1.0.0b9
-azure-core == 1.33.0
-openai
+
+# Plotting (optional, for matplotlib support in manim)
+matplotlib>=3.5.0
