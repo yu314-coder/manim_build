@@ -1,31 +1,28 @@
-gradio>=4.19.2
-manim>=0.18.0
-Pillow>=10.0.0
-numpy>=1.24.0
-matplotlib>=3.7.0
-pycairo>=1.25.1
-scipy>=1.11.0
-tqdm>=4.66.0
-click>=8.1.0
-moderngl>=5.8.0
-moderngl_window>=2.4.0
-screeninfo>=0.8.0
-pydub>=0.25.1
-watchdog>=3.0.0
-typing_extensions>=4.5.0
-networkx>=3.0
-colour>=0.1.5
-decorator>=5.1.1
-isosurfaces>=0.1.0
-svgelements>=1.9.0
-mapbox-earcut>=1.0.0
-colorthief>=0.2.1
-PyOpenGL>=3.1.7
-PyOpenGL_accelerate>=3.1.7
-gtts
-pyttsx3
-streamlit==1.38.0
-transformers
-torch
-accelerate>=0.26.0
-moviepy
+# Core dependencies
+streamlit>=1.25.0
+manim>=0.17.3
+numpy>=1.22.0
+Pillow>=9.0.0
+matplotlib 
+plotly
+# UI enhancements
+streamlit-ace>=0.1.1
+
+# AI and code generation
+transformers>=4.30.0
+accelerate>=0.20.0
+# Rendering and media processing
+ffmpeg-python>=0.2.0
+moviepy>=1.0.3
+
+# Utilities
+pygments>=2.15.1
+websockets>=10.3
+markdown
+# Better performance
+opencv-python>=4.8.0
+schedule
+# Add these to the required_packages in ensure_packages()
+azure-ai-inference == 1.0.0b9
+azure-core == 1.33.0
+openai
