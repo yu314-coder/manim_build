@@ -23,6 +23,7 @@ import contextlib
 import threading
 import traceback
 from io import StringIO, BytesIO
+import zipfile
 
 # Set up enhanced logging
 logging.basicConfig(
@@ -734,7 +735,7 @@ def generate_manim_video(python_code, format_type, quality_preset, animation_spe
                         file_size_mb = len(video_data) / (1024 * 1024)
                         return video_data, f"✅ Animation converted to GIF successfully! ({file_size_mb:.1f} MB)"
             
-            return None, f"❌ Error: No output files were generated.\n\nMakim output:\n{output_str[:500]}..."
+            return None, f"❌ Error: No output files were generated.\n\nManim output:\n{output_str[:500]}..."
     
     except Exception as e:
         logger.error(f"Error: {str(e)}")
@@ -932,7 +933,7 @@ def main():
         
         custom_libraries = st.text_area(
             "Libraries to install",
-            placeholder="e.g., scipy, networkx, matplotlib",
+            placeholder="e.g., scipy, networkx, plotly",
             key="custom_libraries"
         )
         
